@@ -42,7 +42,34 @@ spring-boot-autoconfiguration
 exclude = Class<?>[] 
 @SpringBootApplication
 
+## ⾃动配置的实现原理
+@EnableAutoConfiguration
+  AutoConfigurationImportSelector
+  META-INF/spring.factories
+    org.springframework.boot.autoconfigure.EnableAutoConfiguration
+    
+## ⾃动配置的实现原理
+条件注解
+  @Conditional
+  @ConditionalOnClass
+  @ConditionalOnBean
+  @ConditionalOnMissingBean
+  @ConditionalOnProperty
 
-## 自动配置 AutoConfigration
+## 动手实现自己的自动配置
 
-## 起步依赖 Starter Dependency
+# 了解起步依赖及其实现原理
+## 很久以前......
+你能记得多少 Maven 依赖
+要实现一个功能，需要引入哪些依赖
+多个依赖项目之间是否会有兼容问题
+
+
+## Spring Boot 的起步依赖
+Starter Dependencies
+  直接⾯面向功能
+  一站获得所有相关依赖，不再复制粘贴
+官⽅方的 Starters
+  spring-boot-starter-*
+  
+## 定制自己的起步依赖
