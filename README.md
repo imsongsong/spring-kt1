@@ -7,3 +7,7 @@ https://spring.io/projects
 
 ## Hello World
 https://start.spring.io/
+
+## 自动配置 AutoConfigration
+
+## 起步依赖 Starter Dependency
